@@ -1,4 +1,5 @@
-python -m venv venv
+python -m venv venv 
+
 source venv/bin/activate  # Для Linux/macOS
 venv\Scripts\activate     # Для Windows
 
