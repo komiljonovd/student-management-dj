@@ -1,0 +1,357 @@
+{
+  "info": {
+    "_postman_id": "cad5dd21-0337-4bda-bf1f-67bbf4d1e5cb",
+    "name": "Student Management API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "31853770",
+    "_collection_link": "https://go.postman.co/collection/31853770-cad5dd21-0337-4bda-bf1f-67bbf4d1e5cb?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Login / Access Token",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "username",
+              "value": "",
+              "type": "text",
+              "uuid": "6888b74c-338a-4bfa-a44d-9315d69e7673"
+            },
+            {
+              "key": "password",
+              "value": "",
+              "type": "text",
+              "uuid": "1ff49390-cf76-41f4-90f2-9be84ab971eb"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/token/login/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "token",
+            "login",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Refresh Token",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "refresh",
+              "value": "",
+              "type": "text",
+              "uuid": "dddb8a03-27d3-4b11-ae96-4c493803923f",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/token/refresh/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "token",
+            "refresh",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "List Students",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/v1/students/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "v1",
+            "students",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Detail Students",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/v1/students/10/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "v1",
+            "students",
+            "10",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Student",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/v1/students/17/",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "v1",
+            "students",
+            "17",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Post Students",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "first_name",
+              "value": "",
+              "type": "text",
+              "uuid": "30e63ff8-c05f-44ea-b2da-59b1eddf15c8"
+            },
+            {
+              "key": "last_name",
+              "value": "",
+              "type": "text",
+              "uuid": "dbecc5f0-1e96-4e95-8f91-677840ce90e1"
+            },
+            {
+              "key": "email",
+              "value": "",
+              "type": "text",
+              "uuid": "9b15d213-b21e-4b70-89b5-82cf6a28adfe"
+            },
+            {
+              "key": "phone",
+              "value": "",
+              "type": "text",
+              "uuid": "c9707463-ac69-49b3-9808-05c23ca108d8"
+            },
+            {
+              "key": "address",
+              "value": "",
+              "type": "text",
+              "uuid": "50740226-2872-48aa-b705-637fd46a69c7"
+            },
+            {
+              "key": "birth_date",
+              "value": "",
+              "type": "text",
+              "uuid": "39f1371e-d56a-4c19-a5a3-977cac83d33a"
+            },
+            {
+              "key": "birth_date",
+              "value": "",
+              "type": "text",
+              "uuid": "c1f12d70-aab9-4dd9-acf4-8e277f838d50"
+            },
+            {
+              "key": "password",
+              "value": "",
+              "type": "text",
+              "uuid": "23a9d909-d12e-4bea-9193-81410d35b113"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/v1/students/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "v1",
+            "students",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Put Students",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "first_name",
+              "value": "",
+              "type": "text",
+              "uuid": "7c01965c-eadd-4ce7-ae42-46e13bd1054b"
+            },
+            {
+              "key": "last_name",
+              "value": "",
+              "type": "text",
+              "uuid": "c1465f06-3c88-4471-92e3-0568f6d24c9f"
+            },
+            {
+              "key": "email",
+              "value": "",
+              "type": "text",
+              "uuid": "e939a043-c71b-4810-bd34-c8e8abfbee0e"
+            },
+            {
+              "key": "phone",
+              "value": "",
+              "type": "text",
+              "uuid": "340a1c09-4eae-4999-a36f-2e794c7d27b8"
+            },
+            {
+              "key": "address",
+              "value": "",
+              "type": "text",
+              "uuid": "dc980a0b-53da-405e-87da-f52a2fb7fd4f"
+            },
+            {
+              "key": "birth_date",
+              "value": "",
+              "type": "text",
+              "uuid": "2e5f4cae-cf61-4eff-b7e1-b72db1e62211"
+            },
+            {
+              "key": "username",
+              "value": "",
+              "type": "text",
+              "uuid": "381e695c-3838-463e-88cd-3f078a586f29"
+            },
+            {
+              "key": "password",
+              "value": "",
+              "type": "text",
+              "uuid": "c8229e71-0907-41de-8fed-d7306a061dea"
+            },
+            {
+              "key": "is_active",
+              "value": "",
+              "type": "text",
+              "uuid": "6424bd9e-01e1-4c27-871a-9f9b2c4cad3a"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/v1/students/14/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "v1",
+            "students",
+            "14",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Patch Students",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "address",
+              "value": "",
+              "type": "text",
+              "uuid": "a5df57e5-0447-439a-b603-fb2a90efbdd8"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/v1/students/patch/10/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "v1",
+            "students",
+            "patch",
+            "10",
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
