@@ -291,13 +291,8 @@
               "value": "",
               "type": "text",
               "uuid": "c8229e71-0907-41de-8fed-d7306a061dea"
-            },
-            {
-              "key": "is_active",
-              "value": "",
-              "type": "text",
-              "uuid": "6424bd9e-01e1-4c27-871a-9f9b2c4cad3a"
             }
+            
           ]
         },
         "url": {

@@ -3,7 +3,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 from studentapp.models import Student
-from rest_framework.parsers import JSONParser
+from rest_framework.parsers import JSONParser, FormParser, MultiPartParser
 from studentapp.serializers.student_serializers import StudentSerializer,StudentPatchSerializer
 
 class StudentListCreateApi(generics.ListCreateAPIView):
@@ -45,4 +45,4 @@ class StudentPatchApi(generics.UpdateAPIView):
     queryset = Student.objects.all()
     serializer_class = StudentPatchSerializer
     http_method_names = ['patch']
-    parser_classes = [JSONParser] 
+    parser_classes = [JSONParser, FormParser, MultiPartParser] 
